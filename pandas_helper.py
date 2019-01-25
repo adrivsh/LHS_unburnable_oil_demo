@@ -119,3 +119,8 @@ def concat_categories(p,np, index):
     return y.squeeze()
 
 
+def collapse_multi_colum(df, sep="_"):
+    df = df.copy()
+    df.columns = [sep.join(map(str,col)) for col in df.columns.values]
+
+    return df
