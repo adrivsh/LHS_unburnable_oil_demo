@@ -1,5 +1,5 @@
 import pandas as pd   
- 
+
 # from sorted_nicely import sorted_nicely
 
  
@@ -96,6 +96,8 @@ def broadcast_simple( df_in, index):
     return y.squeeze()
     
 
+
+
 def concat_categories(p,np, index):
     """works like pd.concat with keys but swaps the index so that the new index is innermost instead of outermost
     http://pandas.pydata.org/pandas-docs/stable/merging.html#concatenating-objects
@@ -115,3 +117,5 @@ def concat_categories(p,np, index):
     
     #makes sure a series is returned when possible
     return y.squeeze()
+
+
